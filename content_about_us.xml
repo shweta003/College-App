@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mcc.myapplication.about_us"
+    android:padding="10dp"
+    android:background="@drawable/bg3">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--<ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/aboutUS"
+            android:layout_gravity="center"
+            android:src="@drawable/mcc"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="About MCC "
+        android:textSize="45dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_dark"
+        android:id="@+id/about_MCC"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/aboutUS"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/panel1"
+        android:layout_below="@+id/about_MCC"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/abt1"
+            android:text="@string/abt1"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="8dp"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/abt2"
+            android:text="@string/abt2"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="8dp"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Vision"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_dark"
+        android:id="@+id/vision"
+        android:layout_gravity="center"
+        android:layout_below="@id/panel1"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/panel2"
+        android:layout_below="@+id/vision"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/vision1"
+            android:text="@string/vision"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="8dp"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Mission"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_dark"
+        android:id="@+id/mission"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/panel2" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/panel3"
+        android:layout_below="@+id/mission"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/mission1"
+            android:text="@string/mission1"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="8dp"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/mission2"
+            android:text="@string/mission2"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="8dp"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/mission3"
+            android:text="@string/mission3"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="8dp"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Objective"
+        android:textColor="@android:color/holo_red_dark"
+        android:id="@+id/objective"
+        android:layout_gravity="center_horizontal"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/panel3"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/panel4"
+        android:layout_below="@+id/objective"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/obj1"
+            android:text="@string/obj1"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="8dp"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/obj2"
+            android:text="@string/obj2"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="8dp"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/obj3"
+            android:text="@string/obj3"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="8dp"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/obj4"
+            android:text="@string/obj4"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="8dp"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/obj5"
+            android:text="@string/obj5"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="8dp"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>

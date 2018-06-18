@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mcc.myapplication.campus"
+    tools:showIn="@layout/activity_campus"
+    android:background="@drawable/bg3">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt1"
+                android:text="Mulund College Of Commerce (MCC) has an active placement cell, which is managed by faculty and experts. The Placement cell of the college maintains a fruitful relationship with with top leading firms and recruits their learners in these firms. The objective of the placement cell is to produce a breed of dexterous professional for the various organizations.\n"
+                android:textSize="18sp"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt2"
+                android:text="&#9830; Tata Consultancy Seriveces Ltd. \n&#9830; IGATE \n&#9830; Wipro Infotech \n&#9830; Eclerx Services Ltd. \n&#9830; Seed Infotech Ltd \n&#9830; WNS Limited \n&#9830; Tata Capital Financial Services Ltd.
+                "
+                android:textSize="18sp"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/campus_reg_link"
+                android:text="Register Here"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

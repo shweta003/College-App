@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_items"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:padding="5dp"
+    android:layout_marginLeft="5dp"
+    android:textColor="#cc0000"
+    android:drawablePadding="10dp"
+    android:textSize="20sp"
+    android:drawableRight="@drawable/ic_right"/>
